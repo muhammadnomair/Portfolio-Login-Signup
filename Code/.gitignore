@@ -1,4 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# these default files and folders are ignored to commit by this file.
 
 # dependencies
 /node_modules
