@@ -1,0 +1,264 @@
+@import "./mixins.scss";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.rubik-text {
+  font-family: "Rubik", sans-serif;
+}
+
+.app-btns {
+  @apply rounded-[12px] items-center w-full hover:font-[600] transition-all;
+}
+.app-social-btns {
+  @apply text-[11px] md:text-[13px] font-[600] items-center;
+}
+.account_heading {
+  @apply text-[18px] sm:text-[26px] lg:text-primary-account-heading font-bold text-primary-space;
+}
+.account_desc {
+  @apply text-primary-account-desc-blu text-primary-account-desc font-normal;
+}
+// checkbox styles
+.custom_checkbox input[type="checkbox"] {
+  accent-color: #d42645;
+}
+// otp input field
+.containerStyle {
+  display: flex !important;
+  justify-content: center !important;
+}
+.inputStyle {
+  width: 40px !important;
+  height: 40px;
+  margin: 0 14px;
+  font-size: 18px;
+  border-radius: 2px;
+  // border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #f2f2f2;
+}
+
+.ant-slider {
+  .ant-slider-track {
+    background-color: red; /* trackBg */
+  }
+  .ant-slider-handle {
+    background-color: #d42645 !important;
+    border-color: #d42645 !important;
+  }
+}
+.ant-slider {
+  .ant-slider-track:hover {
+    background-color: red; /* trackBg */
+  }
+}
+
+.ant-slider .ant-slider-handle {
+  --antd-wave-shadow-color: red !important;
+}
+.ant-slider .ant-slider-handle::after {
+  background: #d42645;
+  box-shadow: 0 0 0 2px #d42645;
+  --antd-wave-shadow-color: red !important;
+}
+.ant-slider .ant-slider-handle:hover {
+  background: #d42645;
+  box-shadow: 0 0 0 2px #d42645;
+  --antd-wave-shadow-color: red !important;
+}
+
+.ant-slider .ant-slider-handle:hover::after {
+  box-shadow: 0 0 0 4px #d42645;
+  --antd-wave-shadow-color: red !important;
+}
+
+// image slider custom styles
+.image-gallery-svg {
+  width: 30px !important;
+}
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  outline: none;
+  border: 2px solid #d42645;
+  border-radius: 6px;
+  padding-top: 2px;
+}
+
+.image-gallery-thumbnail:hover {
+  outline: none;
+  border: 2px solid #d42645;
+  border-radius: 6px;
+  padding-top: 2px;
+}
+
+.image-gallery-icon:hover {
+  color: #d42645;
+}
+
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+  width: 190px;
+  vertical-align: middle;
+  line-height: 0;
+  height: 100px;
+  object-fit: contain;
+}
+
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: 400px;
+  max-height: 80vh;
+  object-fit: contain;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  height: 85vh;
+}
+
+// Response Card Dashboard
+.bg-color {
+  border-radius: 8px 8px 0px 0px;
+  background: linear-gradient(225deg, #d42626 3.26%, #a33a8e 100%);
+}
+
+// antd modal bg
+.ant-modal-content {
+  background-color: #efefef !important;
+  border-radius: 4px !important;
+}
+.ant-modal-title {
+  background-color: #efefef !important;
+}
+
+// react select styles
+.css-13cymwt-control {
+  border: none !important;
+}
+.css-13cymwt-control:hover {
+  border: none !important;
+}
+.css-3w2yfm-ValueContainer:focus-visible {
+  border: none !important;
+}
+
+.css-t3ipsp-control {
+  border: none !important;
+  box-shadow: none !important;
+}
+.css-t3ipsp-control:hover {
+  border: none !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.bg-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-div {
+  display: none;
+}
+
+.myDIV:hover + .hide-div {
+  height: 50px;
+  width: 300px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 80px;
+  right: 90px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  display: flex;
+  color: black;
+}
+
+// like dislike
+
+.lock:hover .icon-unlock,
+.lock .icon-lock {
+  display: none;
+}
+.lock:hover .icon-lock {
+  display: inline;
+}
+
+// Iterated Image Upload
+
+.img-block {
+  display: inline-block;
+  width: 104px;
+  height: 104px;
+  margin: 0 8px 8px 0;
+  vertical-align: top;
+}
+
+.img-fluid2 {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bg-gray {
+  background-color: transparent;
+  border: 2px solid #f8f8f8;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border: 2px solid #f8f8f8;
+  background-color: transparent;
+  padding: 25px;
+  width: 104px;
+  height: 104px;
+  text-align: center;
+}
+
+.image-btn {
+  border: 2px solid transparent;
+  background-color: transparent;
+  padding: 2px 15px;
+  font-size: 25px !important;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.remove_img {
+  background-color: transparent;
+  border-radius: 69%;
+  border: 1px solid #7a7a7a;
+  position: relative;
+  top: -106px;
+  right: -78px;
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}

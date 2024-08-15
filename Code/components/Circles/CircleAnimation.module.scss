@@ -1,0 +1,422 @@
+.circle_image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0px;
+  width: 200px;
+  right: -50px;
+}
+
+.main {
+  width: 560px;
+  height: 560px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  //   bottom: 0px;
+  right: -18%;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: rgba(212, 38, 69, 1);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+
+  animation: circle 7s linear infinite;
+}
+
+@keyframes circle-mobile {
+  0% {
+    transform: rotate(0deg) translate(125px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(185px) rotate(-360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(280px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(280px) rotate(-360deg);
+  }
+}
+
+.main_outer {
+  width: 700px;
+  height: 700px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -21%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.circle_outer {
+  width: 30px;
+  height: 30px;
+  background: rgba(212, 38, 69, 1);
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  bottom: 100px;
+  left: 100px;
+  right: 100px;
+  overflow: hidden;
+  margin: auto;
+  animation: circle-outer 8s linear infinite;
+}
+
+@keyframes circle-outer {
+  0% {
+    transform: rotate(0deg) translate(350px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(350px) rotate(-360deg);
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .main {
+    right: -21%;
+  }
+  .main_outer {
+    right: -25%;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .main {
+    right: -25%;
+  }
+  .main_outer {
+    right: -29%;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1299px) {
+  .circle_image {
+    width: 130px;
+  }
+  .main {
+    width: 410px;
+    height: 410px;
+    right: -22%;
+  }
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(205px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(205px) rotate(-360deg);
+    }
+  }
+
+  .main_outer {
+    width: 530px;
+    height: 530px;
+    right: -28%;
+  }
+
+  @keyframes circle-outer {
+    0% {
+      transform: rotate(0deg) translate(265px) rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg) translate(265px) rotate(-360deg);
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .circle_image {
+    width: 80px;
+    right: 0px;
+  }
+  .main {
+    width: 300px;
+    height: 300px;
+    right: -17%;
+  }
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(150px) rotate(-360deg);
+    }
+  }
+
+  .main_outer {
+    width: 450px;
+    height: 450px;
+    right: -27%;
+  }
+
+  @keyframes circle-outer {
+    0% {
+      transform: rotate(0deg) translate(225px) rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg) translate(225px) rotate(-360deg);
+    }
+  }
+}
+
+@media (min-width: 900px) and (max-width: 991px) {
+  .circle_image {
+    width: 50px;
+    right: 0px;
+  }
+  .main {
+    width: 260px;
+    height: 260px;
+    right: -17%;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+  }
+
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(130px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(130px) rotate(-360deg);
+    }
+  }
+
+  .main_outer {
+    width: 400px;
+    height: 400px;
+    right: -27%;
+  }
+
+  .circle_outer {
+    width: 20px;
+    height: 20px;
+  }
+  @keyframes circle-outer {
+    0% {
+      transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .circle_image {
+    transform: rotate(55deg);
+    bottom: -35px;
+    right: 0px;
+    width: 100px;
+    top: unset;
+  }
+
+  .main {
+    width: 300px;
+    height: 300px;
+    top: unset;
+    transform: none;
+    bottom: -112px;
+    right: -12%;
+  }
+
+  .circle {
+    width: 25px;
+    height: 25px;
+    animation: circle 4s linear infinite;
+  }
+
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(150px) rotate(-360deg);
+    }
+  }
+
+  .main_outer {
+    width: 400px;
+    height: 400px;
+    top: unset;
+    transform: none;
+    bottom: -145px;
+    right: -15%;
+  }
+
+  .circle_outer {
+    width: 25px;
+    height: 25px;
+    animation: circle-outer 5s linear infinite;
+  }
+
+  @keyframes circle-outer {
+    0% {
+      transform: rotate(0deg) translate(198px) rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg) translate(198px) rotate(-360deg);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .circle_image {
+    transform: rotate(55deg);
+    bottom: -35px;
+    right: 0px;
+    width: 100px;
+    top: unset;
+  }
+
+  .main {
+    width: 300px;
+    height: 300px;
+    top: unset;
+    transform: none;
+    bottom: -125px;
+    right: -16%;
+  }
+
+  .circle {
+    width: 25px;
+    height: 25px;
+    animation: circle 4s linear infinite;
+  }
+
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(150px) rotate(-360deg);
+    }
+  }
+
+  .main_outer {
+    display: none;
+    width: 400px;
+    height: 400px;
+    top: unset;
+    transform: none;
+    bottom: -145px;
+    right: -15%;
+  }
+
+  .circle_outer {
+    display: none;
+    width: 25px;
+    height: 25px;
+    animation: circle-outer 5s linear infinite;
+  }
+
+  @keyframes circle-outer {
+    0% {
+      transform: rotate(0deg) translate(198px) rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg) translate(198px) rotate(-360deg);
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .circle_image {
+    transform: rotate(55deg);
+    bottom: -35px;
+    right: 0px;
+    width: 100px;
+    top: unset;
+  }
+
+  .main {
+    width: 300px;
+    height: 300px;
+    top: unset;
+    transform: none;
+    bottom: -140px;
+    right: -24%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .circle_image {
+    transform: rotate(55deg);
+    bottom: -44px;
+    right: 12px;
+    width: 100px;
+    top: unset;
+  }
+
+  .main {
+    width: 300px;
+    height: 300px;
+    top: unset;
+    transform: none;
+    bottom: -150px;
+    right: -28%;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .circle_image {
+    transform: rotate(55deg);
+    bottom: -44px;
+    right: 12px;
+    width: 90px;
+    top: unset;
+  }
+
+  .main {
+    width: 300px;
+    height: 300px;
+    top: unset;
+    transform: none;
+    bottom: -155px;
+    right: -37%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .circle_image {
+    transform: rotate(55deg);
+    bottom: -44px;
+    right: 12px;
+    width: 80px;
+    top: unset;
+  }
+
+  .main {
+    width: 300px;
+    height: 300px;
+    top: unset;
+    transform: none;
+    bottom: -170px;
+    right: -45%;
+  }
+}
